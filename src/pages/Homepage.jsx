@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 const Homepage = () => {
   return (
     <div className="">
-      {/*    <Link to='/auth'><button>Get Started</button></Link>*/}
       <Hero />
       <About />
       <Extras />

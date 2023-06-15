@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiOutlineMail, AiFillFacebook, AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -20,6 +21,7 @@ const Footer = () => {
           <h2 className='font-bold'>Address:</h2>
           <p>1234 Street Name</p>
           <p>City, AA 99999</p>
+          <Link to='/privacy'><p className='text-[blue]'>Privacy Policies</p></Link>
         </div>
       </div>
     </footer>

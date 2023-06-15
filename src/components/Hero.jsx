@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { typing, typing2, typing3, typing4, typing5, logo } from "../assets";
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -23,9 +24,8 @@ const Hero = () => {
   } = heroStyles;
 
   return (
-    <section>
+    <section className='max-w-[100%]'>
       <div className="relative">
-        <img src={logo} alt="logo" className="w-[100px] animate-slide-down" />
         <div className="relative">
           <img src={images[currentImage]} alt="hero_bg" className={slideShow} />
 
@@ -35,9 +35,9 @@ const Hero = () => {
               <span className="text-[#808000]">Writing Potential</span>
             </h1>
             <h3 className={header3Styles}>Achieve your dream score</h3>
-            <button className={buttonStyle}>
+            <Link to='/form'><button className={buttonStyle}>
               <p className={buttonTextStyle}>Get Started</p>
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>
@@ -47,9 +47,9 @@ const Hero = () => {
 
 const heroStyles = {
   slideShow:
-    "w-[393px] h-[679px] md:w-[900px] opacity-25 md:opacity-25 md:h-[879px] lg:h-[900px] ",
+    "w-[393px] h-[679px] md:w-[900px] opacity-25 md:opacity-25 md:h-[879px] lg:h-[700px] ",
   headerWrapper:
-    "absolute top-[80px] left-0 w-full flex flex-col items-center md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:text-center lg:absolute lg:top-[50%] lg:left-[75%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center",
+    "absolute top-[80px] left-0 w-full flex flex-col items-center md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:text-center lg:absolute lg:top-[40%] lg:left-[55%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center",
   header1Styles:
     "text-[40px] text-secondary font-work font-semibold md:text-[60px] lg:text-[92px] animate-slide-left",
   header3Styles:

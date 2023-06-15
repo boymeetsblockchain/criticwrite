@@ -44,7 +44,7 @@ const FAQs = () => {
       {faqData.map((item, index) => (
         <div key={index} className="mb-4">
           <button
-            className="flex items-center justify-between w-full px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-md focus:outline-none"
+            className="flex items-center justify-between w-full px-4 py-2 bg-[#e6dcc6] hover:bg-[white] rounded-md focus:outline-none"
             onClick={() => toggleAccordion(index)}
           >
             <span className="text-lg text-[#1f1e20] font-medium">{item.question}</span>
@@ -52,7 +52,7 @@ const FAQs = () => {
               className={`w-6 h-6 transition-transform ${
                 activeIndex === index ? 'transform rotate-180' : ''
               }`}
-              fill="none"
+              fill="black"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
@@ -65,8 +65,8 @@ const FAQs = () => {
             </svg>
           </button>
           {activeIndex === index && (
-            <div className="px-4 py-2 bg-[#e6dcc6] rounded-md">
-              <p className="text-[#1f1e20] font-bold">{item.answer}</p>
+            <div className="px-4 py-2 rounded-md">
+              <p className="text-[#e6dcc6]">{item.answer}</p>
             </div>
           )}
         </div>

@@ -1,8 +1,11 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast'
+import { useNavigate } from "react-router-dom";
+
 const Form = () => {
   const form = useRef();
+  const navigate = useNavigate();
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -10,6 +13,7 @@ const Form = () => {
       .then((result) => {
           console.log(result.text);
           toast.success("essay sent succesfully")
+          navigate('/payment')
       }, (error) => {
           console.log(error.text);
       });
@@ -19,7 +23,7 @@ const Form = () => {
 
   return (
     <div className="py-2 space-y-2">
-      <h1 className="text-center font-bold text-3xl md:text-4xl">Write an Essay</h1>
+      <h1 className="text-center font-[serif] font-bold text-3xl md:text-4xl">Write an Essay</h1>
       <form
       ref={form}
         onSubmit={sendEmail}
@@ -45,6 +49,7 @@ const Form = () => {
     peer
     invalid:border-b-1
     "
+    required
     placeholder=" " />
 <label  className="
     absolute 
@@ -84,6 +89,7 @@ const Form = () => {
     peer
     invalid:border-b-1
     "
+    required
     placeholder=" " />
 <label htmlFor={"email"} className="
     absolute 
@@ -108,7 +114,8 @@ const Form = () => {
             id="essay"
             name='essay'
             className="block rounded-md px-6 pt-6 pb-1 w-[350px] md:w-[500px] 
-             h-[300px] text-md text-black bg-white appearance-none focus:outline-none focus:ring-0 peer invalid:border-b-1"
+             h-[300px] text-md text-[black] bg-[white] appearance-none focus:outline-none focus:ring-0 peer invalid:border-b-1"
+             required
           ></textarea>
           <label
             htmlFor="essay"
@@ -119,7 +126,7 @@ const Form = () => {
           </label>
         </div>
         <button type='submit'
-         className="px-4 py-2 bg-zinc-500  text-white rounded-md">Submit</button>
+         className="text-[16px] text-[#1f1e20] rounded-[25px] min-w-[170px] p-3 bg-[#e6dcc6]">Submit</button>
       </form>
     </div>
   );

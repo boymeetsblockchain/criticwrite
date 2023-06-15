@@ -1,4 +1,4 @@
-import React from 'react'
+import { Toaster } from 'react-hot-toast';
 import {Route,Routes} from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import Payment from './pages/Payments'
@@ -14,6 +14,7 @@ function App() {
         <Route path='/Payment' element={<Payment/>}/>
       </Routes>
       <Footer/>
+      <Toaster/>
      </div>
   )
 }

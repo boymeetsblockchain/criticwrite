@@ -44,7 +44,7 @@ const FAQs = () => {
       {faqData.map((item, index) => (
         <div key={index} className="mb-4">
           <button
-            className="flex items-center justify-between w-full px-4 py-2 bg-[#e6dcc6] hover:bg-[white] rounded-md focus:outline-none"
+            className="flex items-center justify-between w-full px-4 py-2 bg-[#d1dbde] hover:bg-[white] rounded-md focus:outline-none"
             onClick={() => toggleAccordion(index)}
           >
             <span className="text-lg text-[#1f1e20] font-medium">{item.question}</span>
@@ -66,7 +66,7 @@ const FAQs = () => {
           </button>
           {activeIndex === index && (
             <div className="px-4 py-2 rounded-md">
-              <p className="text-[#e6dcc6]">{item.answer}</p>
+              <p className="text-[#000000]">{item.answer}</p>
             </div>
           )}
         </div>

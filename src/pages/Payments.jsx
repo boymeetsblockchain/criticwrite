@@ -39,7 +39,7 @@ const Payment = () => {
 
 	return(
 		<div className='flex flex-col justify-center align-center'>
-			<div className='max-w-[95%] w-full p-4 m-4 text-[black] bg-[#e6dcc6] shadow-lg rounded'>
+			<div className='max-w-[95%] w-full p-4 m-4 text-[black] bg-[#d1dbde] shadow-lg rounded'>
 				<div className='text-sm h-[300px] overflow-y-scroll'>
 					<h2 className='text-lg text-center font-bold mb-4'>Terms of Service</h2>
 
@@ -102,9 +102,9 @@ const Payment = () => {
 			{accepted ? (
 								 <PaystackButton {...componentProps} 
 				 disabled={true}
-				 className='text-[16px] font-bold text-[#1f1e20] rounded-[25px] min-w-[170px] p-3 bg-[#808000]'/>
+				 className='text-[16px] font-bold text-[#1f1e20] rounded-[25px] min-w-[170px] p-3 bg-[#167396]'/>
 			):(
-			<button className='text-[16px] font-bold text-[#1f1e20] rounded-[25px] min-w-[170px] p-3 bg-[#e6dcc6]'>Pay Now</button>
+			<button className='text-[16px] font-bold text-[#1f1e20] rounded-[25px] min-w-[170px] p-3 bg-[#d1dbde]'>Pay Now</button>
 			)
 			}
 			</div>

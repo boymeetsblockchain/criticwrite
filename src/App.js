@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom'
 
 function App() {
   return (
-     <div className='max-w-[100%] min-h-[100vh] px-4 md:px-16 bg-[#2a292b] text-[#e6dcc6]'>
-          <Link to='/'><img src={logo} alt="logo" className="w-[100px] animate-slide-down" /></Link>
+     <div className='max-w-[100%] min-h-[100vh] px-4 md:px-16 bg-[white] text-[#000000]'>
+          <Link to='/'><img src={logo} alt="logo" className="w-[150px] h-[140px] lg:h-[130px] lg:w-[180px] animate-slide-down" /></Link>
       <Routes>
         <Route path='/' element={<Homepage/>}/>
         <Route path='/form' element={<Form/>}/>

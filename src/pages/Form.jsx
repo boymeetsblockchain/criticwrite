@@ -20,6 +20,7 @@ const Form = () => {
 
       e.target.reset()
   };
+  //pk_live_76dad547a4de80cceec83aa601079dfbd1fcce0a;
 
   return (
     <div className="py-2 space-y-2">
@@ -42,7 +43,7 @@ const Form = () => {
     md:w-[500px]
     text-md
   text-black
-  bg-white
+  bg-[#d1dbde]
     appearance-none
     focus:outline-none
     focus:ring-0
@@ -82,7 +83,7 @@ const Form = () => {
     md:w-[500px]
     text-md
   text-black
-  bg-white
+  bg-[#d1dbde]
     appearance-none
     focus:outline-none
     focus:ring-0
@@ -114,7 +115,7 @@ const Form = () => {
             id="essay"
             name='essay'
             className="block rounded-md px-6 pt-6 pb-1 w-[350px] md:w-[500px] 
-             h-[300px] text-md text-[black] bg-[white] appearance-none focus:outline-none focus:ring-0 peer invalid:border-b-1"
+             h-[280px] text-md text-[black] bg-[#d1dbde] appearance-none focus:outline-none focus:ring-0 peer invalid:border-b-1"
              required
           ></textarea>
           <label
@@ -126,7 +127,7 @@ const Form = () => {
           </label>
         </div>
         <button type='submit'
-         className="text-[16px] text-[#1f1e20] rounded-[25px] min-w-[170px] p-3 bg-[#e6dcc6]">Submit</button>
+         className="text-[16px] hover:bg-[#167396] text-[#1f1e20] rounded-[25px] min-w-[170px] p-3 bg-[#d1dbde]">Submit</button>
       </form>
     </div>
   );

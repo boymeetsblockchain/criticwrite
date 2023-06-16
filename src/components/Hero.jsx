@@ -57,7 +57,7 @@ const heroStyles = {
   header3Styles:
     "text-[24px] mr-[20px] md:mr-[-20px] md:text-[30px]  font-work font-medium text-[#167396] mt-[10px] lg:text-[48px]",
   buttonStyle:
-    "w-[183px] h-[55px] mr-[140px] md:ml-[140px] rounded-[17px] bg-secondary flex justify-center items-center mt-[15px] md:h-[77px] hover:bg-[#167396]",
+    "w-[183px] h-[55px] mr-[140px] md:ml-[140px] rounded-[17px] bg-[#d1dbde] flex justify-center items-center mt-[15px] md:h-[77px] hover:bg-[#167396]",
   buttonTextStyle: "text-[24px] font-work font-bold text-primary",
 };
 

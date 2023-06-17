@@ -41,7 +41,7 @@ const Payment = () => {
 		<div className='flex flex-col justify-center align-center'>
 			<div className='max-w-[95%] w-full p-4 m-4 text-[black] bg-[#d1dbde] shadow-lg rounded'>
 				<div className='text-sm h-[300px] overflow-y-scroll'>
-					<h2 className='text-lg text-center font-bold mb-4'>Terms of Service</h2>
+					<h2 className='text-lg text-[#167396] text-center font-bold mb-4'>Terms of Service</h2>
 
 				<p className='text-left text-[blue] font-serif'>Please read these Terms of Service ("Terms") carefully before using CritiWrite's essay evaluation service ("Service"). By accessing or using the Service, you agree to be bound by these Terms.</p>
 				<p className='text-[15px] font-bold font-serif'> 1. Evaluation Service:</p>
@@ -101,7 +101,6 @@ const Payment = () => {
 			<div className='justify-center align-center text-center'>
 			{accepted ? (
 								 <PaystackButton {...componentProps} 
-				 disabled={true}
 				 className='text-[16px] font-bold text-[#1f1e20] rounded-[25px] min-w-[170px] p-3 bg-[#167396]'/>
 			):(
 			<button className='text-[16px] font-bold text-[#1f1e20] rounded-[25px] min-w-[170px] p-3 bg-[#d1dbde]'>Pay Now</button>

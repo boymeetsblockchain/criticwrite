@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className='flex flex-col px-4 md:px-8 w-full mx-auto py-4'>
-      <h1 className="footer-header text-4xl font-bold text-center">
+      <h1 className="footer-header text-4xl text-[#167396] font-bold text-center">
         CritiWrite
       </h1>
       <div className="icons-address items-center justify-center flex flex-col md:flex-row md:justify-between text-center mt-6">

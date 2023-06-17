@@ -40,7 +40,7 @@ const FAQs = () => {
 
   return (
     <div className="max-w-3xl mx-auto p-[4%]">
-      <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+      <h2 className="text-2xl text-[#167396] font-bold mb-6">Frequently Asked Questions</h2>
       {faqData.map((item, index) => (
         <div key={index} className="mb-4">
           <button
@@ -66,7 +66,7 @@ const FAQs = () => {
           </button>
           {activeIndex === index && (
             <div className="px-4 py-2 rounded-md">
-              <p className="text-[#000000]">{item.answer}</p>
+              <p className="text-[#000000] font-sans">{item.answer}</p>
             </div>
           )}
         </div>

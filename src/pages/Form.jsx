@@ -24,7 +24,7 @@ const Form = () => {
 
   return (
     <div className="py-2 space-y-2">
-      <h1 className="text-center font-[serif] font-bold text-3xl md:text-4xl">Write an Essay</h1>
+      <h1 className="text-center text-[#167396] font-[serif] font-bold text-3xl md:text-4xl">Write an Essay</h1>
       <form
       ref={form}
         onSubmit={sendEmail}

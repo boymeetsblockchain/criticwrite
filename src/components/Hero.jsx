@@ -53,9 +53,9 @@ const heroStyles = {
   headerWrapper:
     "absolute top-[80px] left-0 w-full flex flex-col items-center md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:text-center lg:absolute lg:top-[40%] lg:left-[75.7%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center lg:w-[50%]",
   header1Styles:
-    "text-[40px] text-[#167396] font-serif font-semibold md:text-[60px] lg:text-[68px] animate-slide-left",
+    "text-[40px] text-[#167396] font-serif font-extrabold md:text-[60px] lg:text-[68px] animate-slide-left",
   header3Styles:
-    "text-[24px] font-serif mr-[20px] md:mr-[-20px] md:text-[30px]  font-serif font-medium text-[#167396] mt-[10px] lg:text-[35px]",
+    "text-[24px] font-serif mr-[20px] md:mr-[-20px] md:text-[30px]  font-serif font-semibold text-[#167396] mt-[10px] lg:text-[35px]",
   buttonStyle:
     "w-[183px] h-[55px] mr-[140px] md:ml-[140px] rounded-[17px] bg-secondary flex justify-center items-center mt-[15px] md:h-[77px] hover:bg-[#167396]",
   buttonTextStyle: "text-[24px] font-sans font-bold text-primary",

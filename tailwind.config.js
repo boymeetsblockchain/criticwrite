@@ -10,6 +10,8 @@ module.exports = {
     fontFamily: {
       work: ["Work Sans", "sans-serif"],
       montserrat: ["Montserrat", "sans-serif"],
+      sans: ['ui-sans-serif', 'system-ui'],
+      serif: ['ui-serif', 'Georgia'],
     },
   },
   plugins: [],

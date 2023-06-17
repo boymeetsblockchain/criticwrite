@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { typing, typing2, typing3, typing4, typing5, logo } from "../assets";
+import { typing, typing2, typing3, typing4, typing5 } from "../assets";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -32,7 +32,7 @@ const Hero = () => {
           <div className={headerWrapper}>
             <h1 className={header1Styles}>
               Unlock your <br />
-              <span className="text-[black]">Writing Potential</span>
+              <span className="text-[black] font-sans">Writing Potential</span>
             </h1>
             <h3 className={header3Styles}>Achieve your dream score</h3>
             <Link to="/form">
@@ -49,16 +49,16 @@ const Hero = () => {
 
 const heroStyles = {
   slideShow:
-    "w-[393px] h-[679px] md:w-[900px] opacity-[0.7] md:opacity-[0.8] md:h-[879px] lg:h-[750px] ",
+    "w-[393px] h-[679px] md:w-[900px] opacity-[0.7] md:opacity-[0.8] md:h-[879px] lg:h-[80vh] lg:w-[50%]",
   headerWrapper:
-    "absolute top-[80px] left-0 w-full flex flex-col items-center md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:text-center lg:absolute lg:top-[40%] lg:left-[75%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center",
+    "absolute top-[80px] left-0 w-full flex flex-col items-center md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:text-center lg:absolute lg:top-[40%] lg:left-[75.7%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center lg:w-[50%]",
   header1Styles:
-    "text-[40px] text-[#167396] font-work font-semibold md:text-[60px] lg:text-[92px] animate-slide-left",
+    "text-[40px] text-[#167396] font-serif font-semibold md:text-[60px] lg:text-[68px] animate-slide-left",
   header3Styles:
-    "text-[24px] mr-[20px] md:mr-[-20px] md:text-[30px]  font-work font-medium text-[#167396] mt-[10px] lg:text-[48px]",
+    "text-[24px] font-serif mr-[20px] md:mr-[-20px] md:text-[30px]  font-serif font-medium text-[#167396] mt-[10px] lg:text-[35px]",
   buttonStyle:
     "w-[183px] h-[55px] mr-[140px] md:ml-[140px] rounded-[17px] bg-secondary flex justify-center items-center mt-[15px] md:h-[77px] hover:bg-[#167396]",
-  buttonTextStyle: "text-[24px] font-work font-bold text-primary",
+  buttonTextStyle: "text-[24px] font-sans font-bold text-primary",
 };
 
 export default Hero;

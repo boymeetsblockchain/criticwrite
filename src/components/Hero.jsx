@@ -27,7 +27,7 @@ const Hero = () => {
     <section className="max-w-[100%] overflow-x-hidden">
       <div className="relative">
         <div className="relative">
-          <img src={images[currentImage]} alt="hero_bg" className={slideShow} />
+          <img src={images[currentImage]} alt="hero_bg" className={`${slideShow}`} />
 
           <div className={headerWrapper}>
             <h1 className={header1Styles}>

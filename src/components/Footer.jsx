@@ -17,10 +17,11 @@ const Footer = () => {
             <a href="#"><AiOutlineTwitter size={32} /></a>
           </div>
         </div>
-        <div className="address mt-6 md:mt-0">
-          <h2 className='font-bold'>Address:</h2>
-          <p>1234 Street Name</p>
-          <p>City, AA 99999</p>
+        <div className="address mt-6 md:mt-0 flex items-center flex-col">
+          <h2 className='font-bold'>Email Address:</h2>
+          <AiOutlineMail size={32}/>
+          <p>critiwrite@gmail.com</p>
+         
           <Link to='/privacy'><p className='text-[blue]'>Privacy Policies</p></Link>
         </div>
       </div>

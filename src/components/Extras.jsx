@@ -5,7 +5,7 @@ const Extras = ()=>{
 	return(
 	<>
 	<hr/>
-	<section className='flex flex-col md:flex-row md:justify-center flex-wrap gap-3'>
+	<section className='flex flex-col md:flex-row md:justify-center  flex-wrap gap-3'>
 		<section className='p-4 md:max-w-[45%] font-sans'>
 			<h1 className='text-[26px] text-[#167396] font-serif font-bold'>HOW IT WORKS</h1>
 			<p>Submitting your essay for evaluation is easy with CritiWrite. Follow these simple steps:</p>

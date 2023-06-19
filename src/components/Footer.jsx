@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineMail, AiFillFacebook, AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
+import { AiTwotoneMail, AiFillFacebook, AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
 import {Link} from 'react-router-dom';
 
 const Footer = () => {
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className="address mt-6 md:mt-0 flex items-center flex-col">
           <h2 className='font-bold'>Email Address:</h2>
-          <AiOutlineMail size={32}/>
+          <AiTwotoneMail size={32}/>
           <p>critiwrite@gmail.com</p>
          
           <Link to='/privacy'><p className='text-[blue]'>Privacy Policies</p></Link>

@@ -2,8 +2,9 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast'
 import { useNavigate } from "react-router-dom";
+import { tag } from '../assets/index.js';
 
-const Form = () => {
+const Form = ({updateName, updateEmail, updatePhone}) => {
   const form = useRef();
   const navigate = useNavigate();
   const sendEmail = (e) => {
@@ -20,7 +21,6 @@ const Form = () => {
 
       e.target.reset()
   };
-  //pk_live_76dad547a4de80cceec83aa601079dfbd1fcce0a;
 
   return (
     <div className="py-2 space-y-2">
@@ -50,6 +50,7 @@ const Form = () => {
     peer
     invalid:border-b-1
     "
+    onChange={(e)=>updateName(e.target.value)}
     required
     placeholder=" " />
 <label  className="
@@ -69,6 +70,48 @@ const Form = () => {
     peer-focus:scale-75
     peer-focus:-translate-y-3
 ">Full Name</label>
+</div>
+<div className="relative">
+    <input 
+    name='phone'
+    className="
+    block
+    rounded-md
+    px-6
+    pt-6
+    pb-1
+    w-[350px]
+    md:w-[500px]
+    text-md
+  text-black
+  bg-[#d1dbde]
+    appearance-none
+    focus:outline-none
+    focus:ring-0
+    peer
+    invalid:border-b-1
+    "
+    onChange={(e)=>updatePhone(e.target.value)}
+    type='number'
+    required
+    placeholder=" " />
+<label  className="
+    absolute 
+    text-md
+  text-zinc-400
+    duration-150 
+    transform 
+    -translate-y-3 
+    scale-75 
+    top-4 
+    z-10 
+    origin-[0] 
+    left-6
+    peer-placeholder-shown:scale-100 
+    peer-placeholder-shown:translate-y-0 
+    peer-focus:scale-75
+    peer-focus:-translate-y-3
+">Phone Number</label>
 </div>
         <div className="relative">
     <input 
@@ -90,6 +133,7 @@ const Form = () => {
     peer
     invalid:border-b-1
     "
+    onChange={(e)=>updateEmail(e.target.value)}
     required
     placeholder=" " />
 <label htmlFor={"email"} className="
@@ -126,8 +170,11 @@ const Form = () => {
             Write your Essay Here
           </label>
         </div>
+        <div className='flex'>
+        <img src={tag} alt='' height='100px' width='100px' className=''/>
         <button type='submit'
          className="text-[16px] hover:bg-[#167396] text-[#1f1e20] rounded-[25px] min-w-[170px] p-3 bg-[#d1dbde]">Submit</button>
+         </div>
       </form>
     </div>
   );

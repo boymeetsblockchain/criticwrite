@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { PaystackButton } from "react-paystack";
 import { useNavigate } from "react-router-dom";
 
-const Payment = () => {
+const Payment = ({name, email, phone}) => {
 
 	const [accepted, setAccepted] = useState(false);
 
@@ -11,13 +11,9 @@ const Payment = () => {
     setAccepted(!accepted);
   };
 
-  const publicKey = "pk_test_32b249e416818f500de8009ac50e29976a45cab8"
-  const amount = 820
-  const [email, setEmail] = useState("abcdefg@gmail.com")
-  const [name, setName] = useState("John Doe")
-  const [phone, setPhone] = useState("1234567890")
+  const publicKey = "pk_live_76dad547a4de80cceec83aa601079dfbd1fcce0a"
+  const amount = 137400
   
-
   const navigate = useNavigate();
   const success =async ()=>{
     navigate('/');

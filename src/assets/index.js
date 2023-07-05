@@ -1,3 +1,4 @@
+import tag from "./tag.jpg";
 import typing from "./typing.jpg";
 import typing2 from "./typing2.jpg";
 import typing3 from "./typing3.jpg";
@@ -22,4 +23,5 @@ export {
   img3,
   asset1,
   asset2,
+  tag,
 };

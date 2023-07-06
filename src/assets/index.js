@@ -4,6 +4,8 @@ import typing2 from "./typing2.jpg";
 import typing3 from "./typing3.jpg";
 import typing4 from "./typing4.jpg";
 import typing5 from "./typing5.jpg";
+import typing6 from "./man-sits-desk-with-laptop-mug-coffee.jpg";
+import typing7 from "./man-sits-desk-with-laptop-smiles-camera.jpg";
 import logo from "./logo.jpg";
 import img1 from "./img.jpg";
 import img2 from "./img2.jpg";
@@ -17,6 +19,8 @@ export {
   typing3,
   typing4,
   typing5,
+  typing6,
+  typing7,
   logo,
   img1,
   img2,

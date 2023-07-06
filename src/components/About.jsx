@@ -7,10 +7,10 @@ const About = () => {
     <>
       <section className="flex flex-col md:flex-row justify-center align-center gap-3">
         <section className="min-h-[200px] font-sans w-[100%] bg-[grey]mb-[20px] p-[3%] max-h-[400px]">
-          <h1 className="text-[36px] text-[#167396] font-inter font-bold">
+          <h1 className="text-[36px] gradient-text font-inter font-bold">
             ABOUT US
           </h1>
-          <p className="font-work tracking-wide lg:text-[20px] md:text-[17px] ">
+          <p className="font-work font-semibold tracking-wide lg:text-[20px] md:text-[17px] ">
             At CritiWrite, our mission is to empower individuals to achieve
             their highest writing potential. We strive to provide exceptional
             essay evaluation services that foster growth, confidence, and
@@ -29,10 +29,10 @@ const About = () => {
           <img src={img2} alt="" className="max-h-[100%] w-100%" />
         </section>
         <section className="min-h-[200px] w-[100%]  mb-[20px] p-[3%] max-h-[400px]">
-          <h1 className=" text-[#167396] font-inter text-[36px] font-bold">
+          <h1 className=" gradient-text font-inter text-[36px] font-bold">
             EXPERIENCE AND EXPERTISE
           </h1>
-          <p className="font-work tracking-wide lg:text-[20px] md:text-[17px]">
+          <p className="font-work font-semibold tracking-wide lg:text-[20px] md:text-[17px]">
             Our team of expert evaluators consists of highly qualified
             professionals with extensive experience in evaluating essays for
             various exams. They possess in-depth knowledge of the official

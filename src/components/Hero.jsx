@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from "react";
+
 import {
   typing,
   typing2,
   typing3,
-  typing4,
   typing5,
   asset1,
-  asset2,
+  typing6,
+  typing7,
 } from "../assets";
 import { Link } from "react-router-dom";
+import TypingEffect from "./TypingEffect";
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const images = [typing, typing2, typing3, typing4, typing5];
+  const images = [typing, typing2, typing3, typing5, typing6, typing7];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -26,7 +28,6 @@ const Hero = () => {
     slideShow,
     headerWrapper,
     header1Styles,
-    header3Styles,
     buttonStyle,
     buttonTextStyle,
   } = heroStyles;
@@ -39,7 +40,7 @@ const Hero = () => {
           <img
             src={images[currentImage]}
             alt="hero_bg"
-            className={`${slideShow}`}
+            className={`${slideShow} lg:blur-none md:blur-md`}
           />
         </div>
         <div>
@@ -57,13 +58,14 @@ const Hero = () => {
           <h1 className={header1Styles}>
             Unlock your
             <br className="md:hidden" /> Writing
-            <span className="text-[#167396] font-inter"> Potential</span>
+            <span className="font-inter"> Potential</span>
           </h1>
-          <h3 className={header3Styles}>
-            Achieve your <span className="text-[#167396]">dream score</span>{" "}
-          </h3>
+
+          <TypingEffect text="Achieve your dream score" delay={80} />
+
+          {/**get started button */}
           <Link to="/form">
-            <button className={buttonStyle}>
+            <button className={`${buttonStyle} animate-slide-right`}>
               <p className={buttonTextStyle}>Get Started</p>
             </button>
           </Link>
@@ -77,14 +79,15 @@ const heroStyles = {
   slideShow:
     "w-[400px] h-[679px] md:w-[900px] opacity-[0.7] md:opacity-[0.8] md:h-[879px] lg:h-[80vh] lg:w-[50%] ",
   headerWrapper:
-    "absolute top-[80px] left-0 w-full flex flex-col items-center md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:text-center lg:absolute lg:top-[40%] lg:left-[75.7%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center lg:w-[50%] max-sm:top-[33%] max-sm:left-[50%] max-sm:transform max-sm:-translate-x-1/2 max-sm:-translate-y-1/2",
+    "absolute top-[80px] left-0 w-full flex flex-col items-center md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:text-center lg:absolute lg:top-[50%] lg:left-[75.7%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center lg:w-[50%] max-sm:top-[33%] max-sm:left-[50%] max-sm:transform max-sm:-translate-x-1/2 max-sm:-translate-y-1/2",
   header1Styles:
-    "text-[40px] text-[black] font-inter font-extrabold md:text-[55px] lg:text-[68px] animate-slide-left",
+    "text-[40px] text-[black] font-inter font-extrabold md:text-[55px] lg:text-[88px] max-sm:text-[43px] animate-slide-left",
   header3Styles:
-    "text-[24px] font-work mr-[20px] md:mr-[-20px] md:text-[30px]  font-inter font-semibold text-[black] mt-[10px] lg:text-[35px]",
+    "text-[24px] font-work mr-[20px] md:mr-[-20px] md:text-[30px]  font-inter font-semibold text-[black] mt-[10px] lg:text-[55px] max-sm:text-[26px]",
   buttonStyle:
-    "w-[183px] h-[55px] mr-[140px] md:ml-[140px] rounded-[17px] bg-secondary flex justify-center items-center mt-[15px] md:h-[77px] hover:bg-[#167396]",
-  buttonTextStyle: "text-[24px] font-inter font-bold text-primary",
+    "w-[183px] h-[55px] mr-[140px] md:ml-[140px] rounded-[17px] bg-secondary flex justify-center items-center mt-[15px] md:h-[77px] hover:bg-[#167396] max-sm:mr-[170px] lg:w-[283px]",
+  buttonTextStyle:
+    "text-[24px] font-inter font-extrabold text-primary animate-pulse",
 };
 
 export default Hero;

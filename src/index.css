@@ -66,6 +66,14 @@
   opacity: 0.15;
 }
 
+.gradient-text {
+  background: linear-gradient(to right, #167396, #3399ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
 body{
     font-family: 'Montserrat', sans-serif;
 }

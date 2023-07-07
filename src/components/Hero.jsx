@@ -36,18 +36,18 @@ const Hero = () => {
     <section className="max-w-[100%] overflow-x-hidden">
       {/**hero images and slideshow */}
       <section className="relative">
-        <div className="max-sm:hidden">
+        <div className="max-sm:hidden hidden  md:flex items-center ">
           <img
             src={images[currentImage]}
             alt="hero_bg"
-            className={`${slideShow} lg:blur-none md:blur-md`}
+            className={`${slideShow} lg:blur-none  md:blur-md`}
           />
         </div>
         <div>
           <img
             src={asset1}
             alt="mobile_hero"
-            className="lg:hidden md:hidden max-sm:w-[395px] max-sm:h-[400px] max-sm:mt-[175px] max-sm:ml-5"
+            className="lg:hidden md:hidden mt-10 max-sm:w-[395px] max-sm:h-[400px] max-sm:mt-[175px] max-sm:ml-5"
           />
         </div>
       </section>

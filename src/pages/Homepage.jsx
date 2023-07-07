@@ -4,7 +4,7 @@ import About from "../components/About";
 import Extras from "../components/Extras";
 import { Hero } from "../components";
 
-import { Link } from "react-router-dom";
+
 
 const Homepage = () => {
   return (

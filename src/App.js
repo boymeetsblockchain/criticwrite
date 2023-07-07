@@ -28,12 +28,12 @@ function App() {
       <div className="main">
         <div className="gradient" />
       </div>
-      <div className="max-w-[100%] min-h-[100vh] px-4 md:px-16 text-[#000000]">
+      <div className="max-w-[100%] min-h-[100vh] px-4 md:px-8 text-[#000000]">
         <Link to="/">
           <img
             src={logo}
             alt="logo"
-            className="w-[150px] h-[140px] lg:h-[130px]  lg:w-[180px] animate-slide-down"
+            className="w-[150px] h-[140px] lg:h-[130px] object-cover  lg:w-[180px] animate-slide-down"
           />
         </Link>
         <Routes>

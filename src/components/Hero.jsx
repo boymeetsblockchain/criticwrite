@@ -12,7 +12,7 @@ import {
 import { Link } from 'react-router-dom';
 import TypingEffect from './TypingEffect';
 import { motion } from 'framer-motion';
-import { staggerContainer, textVariant, slideIn } from '../utils/motion';
+import { staggerContainer, textVariant } from '../utils/motion';
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);

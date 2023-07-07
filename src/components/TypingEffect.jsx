@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { textVariant } from '../utils/motion';
 
 const TypingEffect = ({ text, delay }) => {
-  const [displayText, setDisplayText] = useState("");
+  const [displayText, setDisplayText] = useState('');
 
   useEffect(() => {
     let currentIndex = 0;
@@ -20,15 +22,15 @@ const TypingEffect = ({ text, delay }) => {
   const { header3Styles } = styles;
 
   return (
-    <h3 className={header3Styles}>
+    <motion.h3 variants={textVariant(1.2)} className={header3Styles}>
       <span className="gradient-text">{displayText}</span>
-    </h3>
+    </motion.h3>
   );
 };
 
 const styles = {
   header3Styles:
-    "text-[24px] font-work mr-[20px] md:mr-[-20px] md:text-[45px]  font-inter font-bold text-[black] mt-[10px] lg:text-[55px] max-sm:text-[26px]",
+    'text-[24px] font-work mr-[20px] md:mr-[-20px] md:text-[45px]  font-inter font-bold text-[black] mt-[10px] lg:text-[55px] max-sm:text-[26px]',
 };
 
 export default TypingEffect;

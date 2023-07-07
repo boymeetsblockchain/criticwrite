@@ -12,6 +12,7 @@ import img2 from "./img2.jpg";
 import img3 from "./img3.jpg";
 import asset1 from "./asset1.png";
 import asset2 from "./asset2.png";
+import pen from "./pen.png";
 
 export {
   typing,
@@ -28,4 +29,5 @@ export {
   asset1,
   asset2,
   tag,
+  pen,
 };

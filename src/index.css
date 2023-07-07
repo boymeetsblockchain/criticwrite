@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 
 .main {
   width: 100vw;
@@ -20,9 +17,8 @@
 }
 
 .main:before {
-  
   position: absolute;
-  content: "";
+  content: '';
   z-index: 2;
   width: 100%;
   height: 100%;
@@ -30,8 +26,8 @@
 }
 
 .main:after {
-  content: "";
-  background-image: url("/src/assets/grid.svg");
+  content: '';
+  background-image: url('/src/assets/grid.svg');
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -58,12 +54,26 @@
     radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
     radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   filter: blur(100px) saturate(150%);
   top: 80px;
   opacity: 0.15;
+}
+
+.gradient-01 {
+  background-image: linear-gradient(
+    270deg,
+    hsl(295deg 76% 51%) 0%,
+    hsl(284deg 70% 73%) 26%,
+    hsl(257deg 70% 86%) 39%,
+    hsl(202deg 92% 90%) 50%,
+    hsl(215deg 77% 81%) 61%,
+    hsl(221deg 73% 70%) 74%,
+    hsl(220deg 76% 51%) 100%
+  );
+  filter: blur(125px);
 }
 
 .gradient-text {
@@ -72,102 +82,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-
-
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+  font-family: 'Montserrat', sans-serif;
 }
-
-
-@keyframes slide-up {
-    0% {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  .animate-slide-up {
-    animation: slide-up 0.2s ease-in-out;
-  }
-  
-  
-  @keyframes slide-left {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes slideRight {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(100%);
-    }
-  }
-  
-  .animate-slide-left {
-    animation: slide-left 0.3s ease-in-out;
-  }
-  
-  .animate-slide-right {
-    animation: slideRight 0.3s ease-out;
-  }
-  
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(-25%);
-      animation-timing-function: cubic-bezier(0.8,0,1,1);
-    }
-    50% {
-      transform: none;
-      animation-timing-function: cubic-bezier(0,0,0.2,1);
-    }
-  }
-  .animate-bouncing {
-    animation: bounce 1s ;
-  }
-  
-  @keyframes slide-down {
-    0% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  .animate-slide-down {
-    animation: slide-down 0.4s ease-in-out;
-  }
-  
-  .fade-out {
-    opacity: 0;
-    transition: opacity 0.6s ease-out;
-  }
-  
-  @keyframes popUp {
-    0% {
-      transform: scale(0);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  
-  .pop-up-animation {
-    animation: popUp 0.3s ease-out;
-  }

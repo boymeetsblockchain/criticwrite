@@ -1,28 +1,31 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
-import { tag } from "../assets/index.js";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
+import { tag } from '../assets/index.js';
+import { motion } from 'framer-motion';
+import { TypingText } from '../components/CustomTexts.jsx';
+import { staggerContainer } from '../utils/motion';
 
 const Form = ({ updateName, updateEmail, updatePhone }) => {
   const form = useRef();
-  const updateExamType=()=>{}
+  const updateExamType = () => {};
   const navigate = useNavigate();
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_b9rb4do",
-        "template_xocrpdo",
+        'service_b9rb4do',
+        'template_xocrpdo',
         form.current,
-        "cNr8CRb1dMidHfvjQ"
+        'cNr8CRb1dMidHfvjQ'
       )
       .then(
         (result) => {
           console.log(result.text);
-          toast.success("essay sent succesfully");
-          navigate("/payment");
+          toast.success('essay sent succesfully');
+          navigate('/payment');
         },
         (error) => {
           console.log(error.text);
@@ -33,10 +36,17 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
   };
 
   return (
-    <div className="py-2 space-y-2">
-      <h1 className="text-center gradient-text font-inter font-bold text-3xl md:text-5xl">
-        Write an Essay
-      </h1>
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="py-2 space-y-2"
+    >
+      <TypingText
+        title="Write an Essay"
+        textStyles="text-center  font-inter font-bold text-3xl md:text-5xl"
+      />
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -160,7 +170,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
             placeholder=" "
           />
           <label
-            htmlFor={"email"}
+            htmlFor={'email'}
             className="
     absolute 
     text-md
@@ -183,9 +193,9 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
           </label>
         </div>
         <div className="relative">
-  <select
-    name="examType"
-    className="
+          <select
+            name="examType"
+            className="
       block
       rounded-md
       px-6
@@ -202,20 +212,20 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
       peer
       invalid:border-b-1
     "
-    onChange={(e) => updateExamType(e.target.value)}
-    required
-  >
-    <option value="">Select Exam Type</option>
-    <option value="IELTS Task 1">IELTS Task 1</option>
-    <option value="IELTS Academic Task 2">IELTS Academic Task 2</option>
-    <option value="IELTS General Task 2">IELTS General Task 2</option>
-    <option value="SAT">SAT</option>
-    <option value="TOEFL">TOEFL</option>
-    <option value="other">Other</option>
-  </select>
-  <label
-    htmlFor="examType"
-    className="
+            onChange={(e) => updateExamType(e.target.value)}
+            required
+          >
+            <option value="">Select Exam Type</option>
+            <option value="IELTS Task 1">IELTS Task 1</option>
+            <option value="IELTS Academic Task 2">IELTS Academic Task 2</option>
+            <option value="IELTS General Task 2">IELTS General Task 2</option>
+            <option value="SAT">SAT</option>
+            <option value="TOEFL">TOEFL</option>
+            <option value="other">Other</option>
+          </select>
+          <label
+            htmlFor="examType"
+            className="
       absolute 
       text-md
       text-zinc-400
@@ -232,10 +242,10 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
       peer-focus:scale-75
       peer-focus:-translate-y-3
     "
-  >
-    Exam Type
-  </label>
-</div>
+          >
+            Exam Type
+          </label>
+        </div>
 
         <div className="relative">
           <textarea
@@ -263,7 +273,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
           </button>
         </div>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

@@ -29,11 +29,11 @@ function App() {
     <main>
       <div className="main">
         <div className="gradient" />
+        <div className=" w-[10%] absolute inset-0 gradient" />
       </div>
+
       <div className="max-w-[100%] min-h-[100vh] px-4 md:px-16 text-[#000000]">
-        <div className="absolute w-[50%] -inset-3 gradient" />
         <motion.nav variants={navVariants} initial="hidden" whileInView="show">
-          <div className="absolute w-[50%] inset-0 gradient" />
           <Link to="/">
             <img
               src={logo}

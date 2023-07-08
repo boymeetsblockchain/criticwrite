@@ -77,7 +77,7 @@ const Hero = () => {
           {/**get started button */}
 
           <Link to="/form">
-            <button className={`${buttonStyle}`}>
+            <button className={`${buttonStyle} z-10`}>
               <p className={buttonTextStyle}>Get Started</p>
             </button>
           </Link>

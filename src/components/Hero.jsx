@@ -10,7 +10,7 @@ import {
   typing7,
 } from '../assets';
 import { Link } from 'react-router-dom';
-import TypingEffect from './TypingEffect';
+import { TypingText } from './CustomTexts';
 import { motion } from 'framer-motion';
 import { staggerContainer, textVariant } from '../utils/motion';
 
@@ -30,6 +30,7 @@ const Hero = () => {
     slideShow,
     headerWrapper,
     header1Styles,
+    header3Styles,
     buttonStyle,
     buttonTextStyle,
   } = heroStyles;
@@ -72,7 +73,10 @@ const Hero = () => {
             <span className="font-inter"> Potential</span>
           </motion.h1>
 
-          <TypingEffect text="Achieve your dream score" delay={80} />
+          <TypingText
+            title="Achieve your dream score"
+            textStyles={header3Styles}
+          />
 
           {/**get started button */}
 
@@ -93,7 +97,7 @@ const heroStyles = {
   headerWrapper:
     'absolute top-[80px] left-0 w-full flex flex-col items-center md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:text-center lg:absolute lg:top-[50%] lg:left-[75.7%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center lg:w-[50%] max-sm:top-[33%] max-sm:left-[50%] max-sm:transform max-sm:-translate-x-1/2 max-sm:-translate-y-1/2',
   header1Styles:
-    'text-[40px] text-[black] font-inter font-extrabold md:text-[55px] lg:text-[89px] max-sm:text-[43px]',
+    'text-[40px] text-[black] font-inter font-extrabold md:text-[55px] lg:text-[90px] max-sm:text-[43px]',
   header3Styles:
     'text-[24px] font-work mr-[20px] md:mr-[-20px] md:text-[30px]  font-inter font-semibold text-[black] mt-[10px] lg:text-[55px] max-sm:text-[26px]',
   buttonStyle:

@@ -1,14 +1,12 @@
-import React from "react";
-import FAQs from "../components/FAQ";
-import About from "../components/About";
-import Extras from "../components/Extras";
-import { Hero } from "../components";
-
-
+import React from 'react';
+import FAQs from '../components/FAQ';
+import About from '../components/About';
+import Extras from '../components/Extras';
+import { Hero } from '../components';
 
 const Homepage = () => {
   return (
-    <div className="">
+    <div className="overflow-x-hidden overflow-y-hidden">
       <Hero />
       <About />
       <Extras />

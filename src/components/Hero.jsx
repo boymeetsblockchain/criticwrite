@@ -36,7 +36,7 @@ const Hero = () => {
   } = heroStyles;
 
   return (
-    <section className="max-w-[100%] overflow-x-hidden">
+    <section className="max-w-full overflow-hidden ">
       {/**hero images and slideshow */}
       <section className="relative">
         <motion.div
@@ -62,10 +62,10 @@ const Hero = () => {
             viewport={{ once: false, amount: 0.25 }}
           >
             <motion.img
-              variants={fadeIn('left', 'tween', 0.3, 1)}
+              variants={fadeIn('right', 'tween', 0.3, 1)}
               src={asset1}
               alt="mobile_hero"
-              className="lg:hidden md:hidden max-sm:w-[395px] max-sm:h-[400px] max-sm:mt-[175px] max-sm:ml-5 "
+              className="lg:hidden md:hidden max-sm:w-[395px] max-sm:h-[400px] max-sm:mt-[175px] max-sm:ml-5"
             />
           </motion.div>
         </div>
@@ -92,7 +92,6 @@ const Hero = () => {
           />
 
           {/**get started button */}
-
           <Link to="/form">
             <button className={`${buttonStyle} z-10`}>
               <p className={buttonTextStyle}>Get Started</p>
@@ -106,9 +105,9 @@ const Hero = () => {
 
 const heroStyles = {
   slideShow:
-    'w-[400px] h-[679px] md:w-[900px] opacity-[0.7] md:opacity-[0.8] md:h-[879px] lg:h-[80vh] lg:w-[50%] ',
+    'w-[400px] h-[679px] md:w-[800px]  opacity-[0.7] md:opacity-[0.8] md:h-[879px] lg:h-[80vh]',
   headerWrapper:
-    'absolute top-[80px] left-0 w-full flex flex-col items-center md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:text-center lg:absolute lg:top-[50%] lg:left-[75.7%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center lg:w-[50%] max-sm:top-[33%] max-sm:left-[50%] max-sm:transform max-sm:-translate-x-1/2 max-sm:-translate-y-1/2',
+    'absolute top-[80px] left-0 w-full flex flex-col items-center md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:text-center  lg:absolute lg:top-[50%] lg:left-[75.7%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center lg:w-[40%] max-sm:top-[33%] max-sm:left-[50%] max-sm:transform max-sm:-translate-x-1/2 max-sm:-translate-y-1/2',
   header1Styles:
     'text-[40px] text-[black] font-inter font-extrabold md:text-[55px] lg:text-[90px] max-sm:text-[43px]',
   header3Styles:

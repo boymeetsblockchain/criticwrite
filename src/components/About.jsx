@@ -32,15 +32,37 @@ const About = () => {
             excel in their writing endeavors.
           </motion.p>
         </motion.div>
-        <div className="m-[2%] p-[2%] max-w-[100%] md:w-[80%]">
-          <img src={img} alt="" className="max-h-[100%] w-100%" />
-        </div>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className="m-[2%] p-[2%] max-w-[100%] md:w-[80%]"
+        >
+          <motion.img
+            variants={fadeIn('left', 'tween', 0.3, 1)}
+            src={img}
+            alt=""
+            className="max-h-[100%] w-100%"
+          />
+        </motion.div>
       </section>
 
       <section className="flex flex-col-reverse md:flex-row justify-center align-center gap-3 mt-[30px]">
-        <section className="m-[2%] p-[2%] max-w-[100%] md:w-[80%]">
-          <img src={img2} alt="" className="max-h-[100%] w-100%" />
-        </section>
+        <motion.section
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className="m-[2%] p-[2%] max-w-[100%] md:w-[80%]"
+        >
+          <motion.img
+            variants={fadeIn('right', 'tween', 0.3, 1)}
+            src={img2}
+            alt=""
+            className="max-h-[100%] w-100%"
+          />
+        </motion.section>
         <motion.div
           variants={staggerContainer}
           initial="hidden"

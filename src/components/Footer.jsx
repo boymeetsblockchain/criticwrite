@@ -21,9 +21,9 @@ const Footer = () => {
     >
       <motion.h1
         variants={textVariant(1.1)}
-        className="footer-header text-[36px] text-[#167396] font-extrabold text-center font-inter tracking-wider"
+        className="footer-header text-[36px] gradient-text  font-extrabold  text-center font-work tracking-wider"
       >
-        CritiWrite
+        CRITIWRITE
       </motion.h1>
       <div className="icons-address items-center justify-center flex flex-col md:flex-row md:justify-between text-center mt-6">
         <div className="icons-social">
@@ -33,33 +33,45 @@ const Footer = () => {
           >
             Follow us on social media:
           </motion.h2>
-          <div className="icons flex justify-center gap-4 mt-2">
+          <motion.div
+            variants={textVariant(1.3)}
+            className="icons flex justify-center gap-4 mt-2"
+          >
             <a href="#">
-              <AiFillFacebook size={32} />
+              <AiFillFacebook size={32} color="#3c3d37" />
             </a>
             <a href="#">
-              <AiFillInstagram size={32} />
+              <AiOutlineTwitter size={32} color="#3c3d37" />
             </a>
             <a href="#">
-              <AiOutlineTwitter size={32} />
+              <AiFillInstagram size={32} color="#3c3d37" />
             </a>
-          </div>
+          </motion.div>
         </div>
         <div className="address mt-6 md:mt-0 flex items-center flex-col font-work">
-          <motion.h2
+          <motion.div
             variants={textVariant(1.3)}
-            className="font-bold font-work lg:text-[20px] md:text-[17px]"
+            className="flex flex-row text-center items-center"
           >
-            Email Address:
-          </motion.h2>
-          <AiTwotoneMail size={32} />
+            <AiTwotoneMail size={31} color="#3c3d37" />
+            <motion.h2
+              variants={textVariant(1.3)}
+              className="font-bold font-work lg:text-[20px] md:text-[17px] ml-[1px]"
+            >
+              Email Address:
+            </motion.h2>
+          </motion.div>
+
           <TypingText
             title="critiwrite@gmail.com"
             textStyles="font-bold font-work"
           />
 
           <Link to="/privacy">
-            <motion.p variants={textVariant(1.4)} className="text-[#167396]">
+            <motion.p
+              variants={textVariant(1.5)}
+              className="gradient-text font-semibold"
+            >
               Privacy Policies
             </motion.p>
           </Link>

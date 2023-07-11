@@ -76,6 +76,18 @@
   filter: blur(125px);
 }
 
+.gradient-04 {
+  position: absolute;
+  width: 304px;
+  height: 20vh;
+  left: 30%;
+  top: 10%;
+
+  background: rgba(45, 72, 152, 0.75);
+  filter: blur(200px);
+  transform: rotate(-53.13deg);
+}
+
 .gradient-text {
   background: linear-gradient(to right, #167396, #3399ff);
   -webkit-background-clip: text;

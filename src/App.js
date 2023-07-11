@@ -30,6 +30,7 @@ function App() {
       <div className="main">
         <div className="gradient" />
         <div className=" w-[10%] absolute inset-0 gradient" />
+        <div className="gradient-04" />
       </div>
 
       <div className="max-w-[100%] min-h-[100vh] px-4 md:px-16 text-[#000000]">

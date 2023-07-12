@@ -94,6 +94,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+.markdown > * {
+  all: revert;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }

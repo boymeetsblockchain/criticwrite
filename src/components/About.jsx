@@ -43,7 +43,7 @@ const About = () => {
             variants={fadeIn('left', 'tween', 0.3, 1)}
             src={img}
             alt=""
-            className="max-h-[100%] w-100%"
+            className="max-h-[100%] w-100% rounded-[15px]"
           />
         </motion.div>
       </section>
@@ -60,7 +60,7 @@ const About = () => {
             variants={fadeIn('right', 'tween', 0.3, 1)}
             src={img2}
             alt=""
-            className="max-h-[100%] w-100%"
+            className="max-h-[100%] w-100% rounded-[15px]"
           />
         </motion.section>
         <motion.div

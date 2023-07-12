@@ -113,7 +113,7 @@ const heroStyles = {
   headerWrapper:
     'absolute top-[80px] left-0 w-full flex flex-col items-center md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:text-center  lg:absolute lg:top-[50%] lg:left-[75.7%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center lg:w-[40%] max-sm:top-[33%] max-sm:left-[50%] max-sm:transform max-sm:-translate-x-1/2 max-sm:-translate-y-1/2',
   header1Styles:
-    'text-[40px] text-[black] font-inter font-extrabold md:text-[50px] lg:text-[90px] max-sm:text-[43px]',
+    'text-[40px] text-[black] font-inter font-extrabold md:text-[50px] lg:text-[91px] max-sm:text-[43px]',
   header3Styles:
     'text-[24px] font-work mr-[20px] md:mr-[-20px] md:text-[30px]  font-inter font-semibold text-[black] mt-[10px] lg:text-[55px] max-sm:text-[26px]',
   buttonStyle:

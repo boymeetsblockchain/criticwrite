@@ -1,3 +1,4 @@
-import Hero from "./Hero";
+import Hero from './Hero';
+import MarkdownSupport from './MarkdownSupport';
 
-export { Hero };
+export { Hero, MarkdownSupport };

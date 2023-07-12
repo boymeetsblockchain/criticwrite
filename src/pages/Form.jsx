@@ -6,6 +6,7 @@ import { tag } from '../assets/index.js';
 import { motion } from 'framer-motion';
 import { TypingText } from '../components/CustomTexts.jsx';
 import { staggerContainer } from '../utils/motion';
+import MarkdownSupport from '../components/MarkdownSupport.jsx';
 
 const Form = ({ updateName, updateEmail, updatePhone }) => {
   const form = useRef();
@@ -213,7 +214,6 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
       md:w-[500px]
       text-sm
       font-work
-      font-semibold
       text-black
       bg-[#d1dbde]
       appearance-none
@@ -274,13 +274,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
         </div>
 
         <div className="relative">
-          <textarea
-            id="essay"
-            name="essay"
-            className="block rounded-md px-6 pt-6 pb-1 w-[350px] md:w-[500px] 
-             h-[280px] text-md font-work text-[black] bg-[#d1dbde] appearance-none focus:outline-none focus:ring-0 peer invalid:border-b-1"
-            required
-          ></textarea>
+          <MarkdownSupport />
           <label
             htmlFor="essay"
             className="absolute text-md font-work font-semibold text-zinc-400 duration-150 transform -translate-y-3 

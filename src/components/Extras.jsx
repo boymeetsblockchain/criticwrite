@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { TypingText } from './CustomTexts';
 import { fadeIn, staggerContainer } from '../utils/motion';
-
 const Extras = () => {
+
   return (
     <>
       <section className="flex flex-col md:flex-row md:justify-center  flex-wrap gap-3">

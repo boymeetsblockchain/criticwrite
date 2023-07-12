@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import {
   typing,
@@ -13,8 +13,12 @@ import { Link } from 'react-router-dom';
 import { TypingText } from './CustomTexts';
 import { motion } from 'framer-motion';
 import { staggerContainer, textVariant, fadeIn } from '../utils/motion';
+import { useInView } from 'react-intersection-observer';
 
 const Hero = () => {
+  const [ref, inView] = useInView();
+  const showBtn = !inView;
+
   const [currentImage, setCurrentImage] = useState(0);
   const images = [typing, typing2, typing3, typing5, typing6, typing7];
 
@@ -36,7 +40,7 @@ const Hero = () => {
   } = heroStyles;
 
   return (
-    <section className="max-w-full overflow-hidden ">
+    <section className="max-w-full overflow-hidden " ref={ref}>
       {/**hero images and slideshow */}
       <section className="relative">
         <motion.div
@@ -53,7 +57,6 @@ const Hero = () => {
             className={`${slideShow} lg:blur-none md:blur-sm z-10 md:rounded-[25px]`}
           />
         </motion.div>
-
         <div className="relative">
           <motion.div
             variants={staggerContainer}
@@ -71,6 +74,7 @@ const Hero = () => {
         </div>
       </section>
 
+            {showBtn && <button className='fixed top-[70vh] right-[1vh] w-[183px] h-[55px] rounded-[17px] bg-[#3197F9] flex justify-center items-center hover:bg-[#167396]'><span className='text-[24px] font-inter font-extrabold text-primary animate-pulse'>Get started</span></button>}
       {/**Hero text & Headers */}
       <section>
         <motion.div

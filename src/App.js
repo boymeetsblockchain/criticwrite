@@ -25,7 +25,7 @@ function App() {
   };
   return (
     <main>
-      <div className="main">
+      <div>
         <div className="gradient" />
         <div className=" w-[10%] absolute inset-0 gradient" />
         <div className="gradient-04" />

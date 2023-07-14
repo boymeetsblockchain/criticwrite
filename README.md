@@ -31,5 +31,5 @@ npm install
 ### Run ⤵
 
 ```cli
-npm run dev
+npm start
 ```

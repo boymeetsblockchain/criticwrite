@@ -3,11 +3,13 @@ import { Toaster } from 'react-hot-toast';
 import { Route, Routes } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import Payment from './pages/Payments';
+import { motion } from 'framer-motion';
 import Footer from './components/Footer';
 import Form from './pages/Form';
 import Privacy from './components/Privacy';
 import { logo } from './assets';
 import { Link } from 'react-router-dom';
+import { navVariants, staggerContainer } from './utils/motion';
 
 function App() {
   const [name, setName] = useState('');
@@ -24,23 +26,28 @@ function App() {
     setPhone(val);
   };
   return (
-    <main className="overflow-x-hidden overflow-y-hidden">
+    <main>
       <div>
         <div className="gradient" />
-        <div className=" w-[10%] absolute inset-0 gradient" />
-        <div className="gradient-04" />
+        <div className=" w-[10%] inset-0 gradient" />
       </div>
 
-      <div className="max-w-[100%] min-h-[100vh] px-4 md:px-16 text-[#000000]">
-        <nav>
+      <div className="max-w-[100%] overflow-x-hidden min-h-[100vh] px-4 md:px-16 text-[#000000] z-10">
+        <motion.nav
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+        >
           <Link to="/">
-            <img
+            <motion.img
+              variants={navVariants}
               src={logo}
               alt="logo"
-              className="w-[150px] h-[140px] lg:h-[130px]  lg:w-[180px]"
+              className="w-[150px] h-[140px] "
             />
           </Link>
-        </nav>
+        </motion.nav>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route

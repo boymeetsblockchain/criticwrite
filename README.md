@@ -1,7 +1,9 @@
+<p align="center"><a href="/" target="_blank"><img src="https://github.com/eclatdevteam/eclatwebapp_frontend/blob/main/src/assets/Eclat.png" width="400"></a></p>
+
 # Welcome to Critiwrite Repo
 
 > [❗]
-> This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+> This project was bootstrapped with `npm create vite@latest`
 
 ## What does critiwrite offer? 🤔
 
@@ -17,7 +19,7 @@ CritiWrite aims to empower individuals in maximizing their writing abilities. Ou
 ### Clone our repo ⤵
 
 ```cli
-git clone https://github.com/boymeetsblockchain/criticwrite.git
+git clone https://github.com/3ill/Critiwrite.git
 ```
 
 ### Install Dependencies ⤵
@@ -29,5 +31,5 @@ npm install
 ### Run ⤵
 
 ```cli
-npm start
+npm run dev
 ```

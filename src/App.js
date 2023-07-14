@@ -24,7 +24,7 @@ function App() {
     setPhone(val);
   };
   return (
-    <main>
+    <main className="overflow-x-hidden overflow-y-hidden">
       <div>
         <div className="gradient" />
         <div className=" w-[10%] absolute inset-0 gradient" />

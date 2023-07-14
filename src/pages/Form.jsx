@@ -73,7 +73,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
             className="
     absolute 
     text-md
-    font-work
+    font-lexend
     font-semibold
   text-zinc-400
     duration-150 
@@ -105,7 +105,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
     w-[350px]
     md:w-[500px]
     text-md
-    font-work
+    font-lexend
     font-semibold
     text-black
   bg-[#d1dbde]
@@ -124,7 +124,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
             className="
     absolute 
     text-md
-    font-work
+    font-lexend
     font-semibold
   text-zinc-400
     duration-150 
@@ -173,7 +173,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
             className="
     absolute 
     text-md
-    font-work
+    font-lexend
     font-semibold
   text-zinc-400
     duration-150 
@@ -205,7 +205,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
       w-[350px]
       md:w-[500px]
       text-sm
-      font-work
+      font-lexend
       text-black
       bg-[#d1dbde]
       appearance-none
@@ -244,7 +244,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
             className="
       absolute 
       text-md
-      font-work
+      font-lexend
       font-semibold
       text-zinc-400
       duration-150 
@@ -269,7 +269,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
           <MarkdownSupport />
           <label
             htmlFor="essay"
-            className="absolute text-md font-work font-semibold text-zinc-400 duration-150 transform -translate-y-3 
+            className="absolute text-md font-lexend font-semibold text-zinc-400 duration-150 transform -translate-y-3 
             scale-75 top-4 z-10 origin-[0] left-6 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3"
           >
             Write your Essay Here
@@ -279,7 +279,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
           <img src={tag} alt="" height="100px" width="100px" className="" />
           <button
             type="submit"
-            className="text-[16px] hover:bg-[#167396] font-work font-semibold text-[#1f1e20] rounded-[25px] min-w-[170px] p-3 bg-[#d1dbde]"
+            className="text-[16px] hover:bg-[#167396] font-lexend font-semibold text-[#1f1e20] rounded-[25px] min-w-[170px] p-3 bg-[#d1dbde]"
           >
             Submit
           </button>

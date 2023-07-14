@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { useInView } from 'react-intersection-observer';
+// import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { TypingText, TitleText } from '../components/CustomTexts';
 import { staggerContainer, fadeIn } from '../utils/motion';
@@ -16,8 +16,8 @@ import {
 } from '../assets';
 
 const Hero = () => {
-  const [ref, inView] = useInView();
-  const showBtn = !inView;
+  // const [ref, inView] = useInView();
+  // const showBtn = !inView;
 
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -42,7 +42,7 @@ const Hero = () => {
   } = heroStyles;
 
   return (
-    <section className="max-w-full overflow-hidden" ref={ref}>
+    <section className="max-w-full overflow-hidden">
       <section className="relative">
         <motion.div
           variants={staggerContainer}
@@ -132,7 +132,7 @@ const heroStyles = {
   header1Styles:
     'text-[40px] text-[black] font-inter font-extrabold md:text-[50px] lg:text-[91px] max-sm:text-[43px]',
   header3Styles:
-    'text-[24px] font-work mr-[20px] md:mr-[-20px] md:text-[30px]  font-inter font-semibold text-[black] mt-[10px] lg:text-[55px] max-sm:text-[26px]',
+    'text-[24px] font-lexend mr-[20px] md:mr-[-20px] md:text-[30px]  font-medium text-[black] mt-[10px] lg:text-[55px] max-sm:text-[26px]',
   buttonStyle:
     'w-[183px] h-[55px] mr-[140px] md:ml-[140px] rounded-[17px] bg-secondary flex justify-center items-center mt-[15px] md:h-[77px] hover:bg-[#167396] max-sm:mr-[170px] lg:w-[283px]',
   buttonTextStyle:

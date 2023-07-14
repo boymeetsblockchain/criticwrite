@@ -35,7 +35,7 @@ const FAQs = () => {
           >
             <motion.span
               variants={fadeIn('up', 'tween', 0.2, 1)}
-              className="lg:text-[20px] md:text-[17px] tracking-wide text-[#1f1e20] font-semibold font-work"
+              className="lg:text-[20px] md:text-[17px] tracking-wide text-[#1f1e20] font-semibold font-lexend"
             >
               {item.question}
             </motion.span>
@@ -65,7 +65,7 @@ const FAQs = () => {
             >
               <motion.p
                 variants={fadeIn('down', 'tween', 0.2, 1)}
-                className="text-[#000000] font-work"
+                className="text-[#000000] font-medium font-work"
               >
                 {item.answer}
               </motion.p>

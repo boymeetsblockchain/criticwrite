@@ -12,7 +12,7 @@ const Extras = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="p-4 md:max-w-[45%] font-work"
+          className="p-4 md:max-w-[45%] font-lexend"
         >
           <TypingText
             title="HOW IT WORKS"
@@ -20,14 +20,14 @@ const Extras = () => {
           />
           <motion.p
             variants={fadeIn('up', 'tween', 0.2, 1)}
-            className="lg:text-[20px] font-work font-semibold md:text-[17px]"
+            className="lg:text-[20px] font-lexend font-semibold md:text-[17px]"
           >
             Submitting your essay for evaluation is easy with CritiWrite. Follow
             these simple steps:
           </motion.p>
           <motion.p
             variants={fadeIn('up', 'tween', 0.3, 1)}
-            className="lg:text-[20px] md:text-[17px] font-work font-semibold"
+            className="lg:text-[20px] md:text-[17px] font-lexend font-semibold"
           >
             1. Go to the{' '}
             <Link to="/form" className=" gradient-text">
@@ -36,19 +36,19 @@ const Extras = () => {
           </motion.p>
           <motion.p
             variants={fadeIn('up', 'tween', 0.4, 1)}
-            className="lg:text-[20px] md:text-[17px] font-work font-semibold"
+            className="lg:text-[20px] md:text-[17px] font-lexend font-semibold"
           >
             2. Make sure to fill all the details as may be required
           </motion.p>
           <motion.p
             variants={fadeIn('up', 'tween', 0.5, 1)}
-            className="lg:text-[20px] md:text-[17px] font-work font-semibold"
+            className="lg:text-[20px] md:text-[17px] font-lexend font-semibold"
           >
             3. Upload your essay through our secure and user-friendly platform.
           </motion.p>
           <motion.p
             variants={fadeIn('up', 'tween', 0.6, 1)}
-            className="lg:text-[20px] md:text-[17px] font-work font-semibold"
+            className="lg:text-[20px] md:text-[17px] font-lexend font-semibold"
           >
             4. Make a secure payment for the evaluation service selected.
           </motion.p>
@@ -58,7 +58,7 @@ const Extras = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="p-4 md:max-w-[45%] font-work"
+          className="p-4 md:max-w-[45%] font-lexend"
         >
           <TypingText
             title="EVALUATION"
@@ -66,7 +66,7 @@ const Extras = () => {
           />
           <motion.p
             variants={fadeIn('up', 'tween', 0.2, 1)}
-            className="lg:text-[20px] md:text-[17px] font-work font-semibold"
+            className="lg:text-[20px] md:text-[17px] font-lexend font-semibold"
           >
             Once your essay is submitted, our expert evaluators will carefully
             review and analyze it based on the official rubrics of the
@@ -81,7 +81,7 @@ const Extras = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="p-4 md:w-[60%] font-work"
+          className="p-4 md:w-[60%] font-lexend"
         >
           <TypingText
             title="ACCURACY"
@@ -89,7 +89,7 @@ const Extras = () => {
           />
           <motion.p
             variants={fadeIn('up', 'tween', 0.2, 1)}
-            className="text-[black] lg:text-[20px] md:text-[17px] font-work font-semibold"
+            className="text-[black] lg:text-[20px] md:text-[17px] font-lexend font-semibold"
           >
             At CritiWrite, we understand the significance of adhering to the
             official rubrics of each exam. Our evaluators are well-versed in

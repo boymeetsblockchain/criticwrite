@@ -16,17 +16,17 @@ const Footer = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="flex flex-col px-4 md:px-8 w-full mx-auto py-4"
+      className="flex flex-col px-4 md:px-8 w-full mx-auto py-4 overflow-x-hidden"
     >
       <TitleText
         title="CRITIWRITE"
-        textStyles="footer-header text-[36px] gradient-text  font-extrabold  text-center font-work tracking-wider"
+        textStyles="footer-header text-[36px] gradient-text  font-extrabold  text-center font-lexend tracking-wider"
       />
       <div className="icons-address items-center justify-center flex flex-col md:flex-row md:justify-between text-center mt-6">
         <div className="icons-social">
           <motion.h2
             variants={textVariant(1.2)}
-            className="font-bold font-work lg:text-[20px] md:text-[17px]"
+            className="font-bold font-lexend lg:text-[20px] md:text-[17px]"
           >
             Follow us on social media:
           </motion.h2>
@@ -45,7 +45,7 @@ const Footer = () => {
             </a>
           </motion.div>
         </div>
-        <div className="address mt-6 md:mt-0 flex items-center flex-col font-work">
+        <div className="address mt-6 md:mt-0 flex items-center flex-col font-lexend">
           <motion.div
             variants={textVariant(1.3)}
             className="flex flex-row text-center items-center"
@@ -53,7 +53,7 @@ const Footer = () => {
             <AiTwotoneMail size={31} color="#3c3d37" />
             <motion.h2
               variants={textVariant(1.3)}
-              className="font-bold font-work lg:text-[20px] md:text-[17px] ml-[1px]"
+              className="font-bold font-lexend lg:text-[20px] md:text-[17px] ml-[1px]"
             >
               Email Address:
             </motion.h2>
@@ -61,7 +61,7 @@ const Footer = () => {
 
           <TypingText
             title="critiwrite@gmail.com"
-            textStyles="font-bold font-work"
+            textStyles="font-bold font-lexend"
           />
 
           <Link to="/privacy">

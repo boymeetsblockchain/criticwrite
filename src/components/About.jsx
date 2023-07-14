@@ -21,7 +21,7 @@ const About = () => {
           />
           <motion.p
             variants={fadeIn('up', 'tween', 0.2, 1)}
-            className="font-work font-semibold tracking-wide lg:text-[20px] md:text-[17px] "
+            className="font-lexend font-semibold tracking-wide lg:text-[20px] md:text-[17px] "
           >
             At CritiWrite, our mission is to empower individuals to achieve
             their highest writing potential. We strive to provide exceptional
@@ -62,6 +62,7 @@ const About = () => {
             className="max-h-[100%] w-100% rounded-[15px]"
           />
         </motion.section>
+
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -75,7 +76,7 @@ const About = () => {
           />
           <motion.p
             variants={fadeIn('up', 'tween', 0.2, 1)}
-            className="font-work font-semibold tracking-wide lg:text-[20px] md:text-[17px]"
+            className="font-lexend font-semibold tracking-wide lg:text-[20px] md:text-[17px]"
           >
             Our team of expert evaluators consists of highly qualified
             professionals with extensive experience in evaluating essays for

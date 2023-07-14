@@ -11,12 +11,14 @@ import {
   typing7,
 } from '../assets';
 import { Link } from 'react-router-dom';
+import Typingeffect from './Typing';
 
 const Hero = () => {
   const [ref, inView] = useInView();
   const showBtn = !inView;
 
   const [currentImage, setCurrentImage] = useState(0);
+
   const images = [typing, typing2, typing3, typing5, typing6, typing7];
 
   useEffect(() => {
@@ -31,13 +33,13 @@ const Hero = () => {
     slideShow,
     headerWrapper,
     header1Styles,
-    header3Styles,
+
     buttonStyle,
     buttonTextStyle,
   } = heroStyles;
 
   return (
-    <section className="max-w-full overflow-hidden " ref={ref}>
+    <section className="max-w-full overflow-hidden" ref={ref}>
       {/**hero images and slideshow */}
       <section className="relative">
         <div className="max-sm:hidden">
@@ -59,23 +61,26 @@ const Hero = () => {
         </div>
       </section>
 
+      {/**Uncomment when ready to edit */}
+      {/* 
       {showBtn && (
         <button className="fixed top-[70vh] right-[1vh] w-[183px] h-[55px] rounded-[17px] bg-[#3197F9] flex justify-center items-center hover:bg-[#167396]">
           <span className="text-[24px] font-inter font-extrabold text-primary animate-pulse">
             Get started
           </span>
         </button>
-      )}
+      )} */}
+
       {/**Hero text & Headers */}
       <section>
         <div className={headerWrapper}>
-          <h1 className={header1Styles}>
+          <h1 className={`${header1Styles} animate-slide-down`}>
             Unlock your
             <br className="md:hidden" /> Writing
             <span className="font-inter"> Potential</span>
           </h1>
 
-          <h3 className={header3Styles}>Achieve your dream score</h3>
+          <Typingeffect text="Achieve your dream score" delay={100} />
 
           {/**get started button */}
           <Link to="/form">
@@ -97,7 +102,7 @@ const heroStyles = {
   header1Styles:
     'text-[40px] text-[black] font-inter font-extrabold md:text-[50px] lg:text-[91px] max-sm:text-[43px]',
   header3Styles:
-    'text-[24px] font-work mr-[20px] md:mr-[-20px] md:text-[30px]  font-inter font-semibold gradient-text mt-[10px] lg:text-[55px] max-sm:text-[26px]',
+    'text-[24px] font-work mr-[20px] md:mr-[-20px] md:text-[30px]  font-inter font-semibold text-[black] mt-[10px] lg:text-[55px] max-sm:text-[26px]',
   buttonStyle:
     'w-[183px] h-[55px] mr-[140px] md:ml-[140px] rounded-[17px] bg-secondary flex justify-center items-center mt-[15px] md:h-[77px] hover:bg-[#167396] max-sm:mr-[170px] lg:w-[283px]',
   buttonTextStyle:

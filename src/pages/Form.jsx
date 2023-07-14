@@ -3,9 +3,7 @@ import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { tag } from '../assets/index.js';
-import { motion } from 'framer-motion';
-import { TypingText } from '../components/CustomTexts.jsx';
-import { staggerContainer } from '../utils/motion';
+import { TitleText } from '../components/CustomTexts.jsx';
 import MarkdownSupport from '../components/MarkdownSupport.jsx';
 
 const Form = ({ updateName, updateEmail, updatePhone }) => {
@@ -37,14 +35,8 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
   };
 
   return (
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className="py-2 space-y-2"
-    >
-      <TypingText
+    <div className="py-2 space-y-2">
+      <TitleText
         title="Write an Essay"
         textStyles="text-center  font-inter font-bold text-3xl md:text-5xl"
       />
@@ -293,7 +285,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
           </button>
         </div>
       </form>
-    </motion.div>
+    </div>
   );
 };
 

@@ -10,3 +10,14 @@ export const TypingText = ({ title, textStyles }) => (
     ))}
   </motion.h1>
 );
+
+export const TitleText = ({ title, textStyles }) => (
+  <motion.h2
+    variants={textVariant2}
+    initial="hidden"
+    whileInView="show"
+    className={`${textStyles} gradient-text`}
+  >
+    {title}
+  </motion.h2>
+);

@@ -28,7 +28,6 @@ function App() {
   return (
     <main>
       <div>
-        <div className="gradient" />
         <div className=" w-[10%] inset-0 gradient" />
       </div>
 

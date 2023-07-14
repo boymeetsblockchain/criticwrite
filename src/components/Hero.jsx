@@ -33,6 +33,7 @@ const Hero = () => {
 
   const {
     slideShow,
+    mobileImageStyle,
     headerWrapper,
     header1Styles,
     header3Styles,
@@ -68,7 +69,7 @@ const Hero = () => {
               variants={fadeIn('right', 'tween', 0.3, 1)}
               src={asset1}
               alt="mobile_hero"
-              className="lg:hidden md:hidden max-sm:w-[395px] max-sm:h-[400px] max-sm:mt-[175px] max-sm:ml-5 z-10"
+              className={mobileImageStyle}
             />
           </motion.div>
         </div>
@@ -124,6 +125,8 @@ const Hero = () => {
 const heroStyles = {
   slideShow:
     'w-[400px] h-[679px] md:w-[800px]  opacity-[0.7] md:opacity-[0.8] md:h-[879px] lg:h-[80vh]',
+  mobileImageStyle:
+    'lg:hidden md:hidden max-sm:w-[395px] max-sm:h-[400px] max-sm:mt-[175px] max-sm:ml-5 z-10',
   headerWrapper:
     'absolute top-[80px] left-0 w-full flex flex-col items-center md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:text-center  lg:absolute lg:top-[50%] lg:left-[75.7%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center lg:w-[40%] max-sm:top-[33%] max-sm:left-[50%] max-sm:transform max-sm:-translate-x-1/2 max-sm:-translate-y-1/2',
   header1Styles:

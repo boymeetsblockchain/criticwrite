@@ -38,7 +38,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
     <div className="py-2 space-y-2">
       <TitleText
         title="Write an Essay"
-        textStyles="text-center  font-inter font-bold text-3xl md:text-5xl"
+        textStyles="text-center gradient-text font-inter font-bold text-3xl md:text-5xl"
       />
       <form
         ref={form}

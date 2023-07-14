@@ -1,8 +1,6 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { TypingText } from './CustomTexts';
-import { fadeIn, staggerContainer } from '../utils/motion';
+import { TitleText } from './CustomTexts';
 
 const Extras = () => {
   return (

@@ -3,7 +3,7 @@
 # Welcome to Critiwrite Repo
 
 > [❗]
-> This project was bootstrapped with `npm create vite@latest`
+> This project was bootstrapped with `npm create react-app`
 
 ## What does critiwrite offer? 🤔
 

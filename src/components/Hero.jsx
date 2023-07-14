@@ -1,5 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
+import { TypingText, TitleText } from '../components/CustomTexts';
+import { staggerContainer, fadeIn } from '../utils/motion';
 
 import {
   typing,
@@ -10,8 +14,6 @@ import {
   typing6,
   typing7,
 } from '../assets';
-import { Link } from 'react-router-dom';
-import Typingeffect from './Typing';
 
 const Hero = () => {
   const [ref, inView] = useInView();
@@ -33,36 +35,72 @@ const Hero = () => {
     slideShow,
     headerWrapper,
     header1Styles,
-
+    header3Styles,
     buttonStyle,
     buttonTextStyle,
   } = heroStyles;
 
   return (
     <section className="max-w-full overflow-hidden" ref={ref}>
-      {/**hero images and slideshow */}
       <section className="relative">
-        <div className="max-sm:hidden">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className="max-sm:hidden"
+        >
           <img
             src={images[currentImage]}
             alt="hero_bg"
-            className={`${slideShow} lg:blur-none md:blur-sm z-10 md:rounded-[25px]`}
+            className={`${slideShow} lg:blur-none max-sm:hidden md:blur-sm z-10 md:rounded-[25px]`}
           />
-        </div>
+        </motion.div>
 
         <div className="relative">
-          <div>
-            <img
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+          >
+            <motion.img
+              variants={fadeIn('right', 'tween', 0.3, 1)}
               src={asset1}
               alt="mobile_hero"
               className="lg:hidden md:hidden max-sm:w-[395px] max-sm:h-[400px] max-sm:mt-[175px] max-sm:ml-5 z-10"
             />
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/**Uncomment when ready to edit */}
-      {/* 
+      <section>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className={headerWrapper}
+        >
+          <TitleText
+            title={
+              // eslint-disable-next-line react/jsx-wrap-multilines
+              <>
+                Unlock your
+                <br className="md:hidden" /> Writing
+                <span className="font-inter"> Potential</span>
+              </>
+            }
+            textStyles={header1Styles}
+          />
+
+          <TypingText
+            title="Achieve your dream score"
+            textStyles={header3Styles}
+          />
+
+          {/**uncomment to edit and style */}
+          {/* 
       {showBtn && (
         <button className="fixed top-[70vh] right-[1vh] w-[183px] h-[55px] rounded-[17px] bg-[#3197F9] flex justify-center items-center hover:bg-[#167396]">
           <span className="text-[24px] font-inter font-extrabold text-primary animate-pulse">
@@ -71,24 +109,13 @@ const Hero = () => {
         </button>
       )} */}
 
-      {/**Hero text & Headers */}
-      <section>
-        <div className={headerWrapper}>
-          <h1 className={`${header1Styles} animate-slide-down`}>
-            Unlock your
-            <br className="md:hidden" /> Writing
-            <span className="font-inter"> Potential</span>
-          </h1>
-
-          <Typingeffect text="Achieve your dream score" delay={100} />
-
           {/**get started button */}
           <Link to="/form">
             <button className={`${buttonStyle} z-10`}>
               <p className={buttonTextStyle}>Get Started</p>
             </button>
           </Link>
-        </div>
+        </motion.div>
       </section>
     </section>
   );

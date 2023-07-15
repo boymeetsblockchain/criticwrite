@@ -16,7 +16,7 @@ const Footer = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="flex flex-col px-4 md:px-8 w-full mx-auto py-4 overflow-x-hidden"
+      className="flex flex-col px-4 md:px-8 w-full mx-auto py-4 overflow-x-hidden overflow-y-hidden"
     >
       <TitleText
         title="CRITIWRITE"

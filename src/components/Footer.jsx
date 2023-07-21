@@ -4,10 +4,15 @@ import {
   AiFillFacebook,
   AiFillInstagram,
   AiOutlineTwitter,
+  AiFillLinkedin,
 } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { staggerContainer, textVariant } from '../utils/motion';
 import { TypingText, TitleText } from './CustomTexts';
+
+/***
+ * todo: Add the linkedin icon, links & target prop
+ */
 
 const Footer = () => {
   return (
@@ -42,6 +47,13 @@ const Footer = () => {
             </a>
             <a href="#">
               <AiFillInstagram size={32} color="#3c3d37" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/eclat-technologies/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillLinkedin size={32} color="#3c3d37" />
             </a>
           </motion.div>
         </div>

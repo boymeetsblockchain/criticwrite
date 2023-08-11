@@ -14,6 +14,13 @@ import asset1 from './asset1.png';
 import asset2 from './asset2.png';
 import pen from './pen.png';
 
+import { LuHeading1 } from 'react-icons/lu';
+import { LuHeading2 } from 'react-icons/lu';
+import { LuHeading3 } from 'react-icons/lu';
+import { BiBold } from 'react-icons/bi';
+import { BiItalic } from 'react-icons/bi';
+import { FiList } from 'react-icons/fi';
+
 export {
   typing,
   typing2,
@@ -30,4 +37,10 @@ export {
   asset2,
   tag,
   pen,
+  LuHeading1,
+  LuHeading2,
+  LuHeading3,
+  BiBold,
+  BiItalic,
+  FiList,
 };

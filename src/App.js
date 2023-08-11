@@ -6,6 +6,7 @@ import Payment from './pages/Payments';
 import { motion } from 'framer-motion';
 import Footer from './components/Footer';
 import Form from './pages/Form';
+import { Toolbar } from './components';
 import Privacy from './components/Privacy';
 import { logo } from './assets';
 import { Link } from 'react-router-dom';

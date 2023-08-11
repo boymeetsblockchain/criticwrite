@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^10.12.18",
+    "markdown-to-jsx": "^7.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
@@ -18,7 +19,9 @@
     "react-quill": "^2.0.0",
     "react-router-dom": "^6.13.0",
     "react-scripts": "5.0.1",
+    "react-simplemde-editor": "^5.2.0",
     "remark-gfm": "^3.0.1",
+    "simplemde": "^1.11.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

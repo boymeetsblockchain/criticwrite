@@ -3,7 +3,9 @@ import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { tag } from '../assets/index.js';
-import { TitleText } from '../components/CustomTexts.jsx';
+import { motion } from 'framer-motion';
+import { TypingText } from '../components/CustomTexts.jsx';
+import { staggerContainer } from '../utils/motion';
 import MarkdownSupport from '../components/MarkdownSupport.jsx';
 
 const Form = ({ updateName, updateEmail, updatePhone }) => {
@@ -35,10 +37,16 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
   };
 
   return (
-    <div className="py-2 space-y-2">
-      <TitleText
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="py-2 space-y-2"
+    >
+      <TypingText
         title="Write an Essay"
-        textStyles="text-center gradient-text font-inter font-bold text-3xl md:text-5xl"
+        textStyles="text-center  font-inter font-bold text-3xl md:text-5xl"
       />
       <form
         ref={form}
@@ -73,7 +81,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
             className="
     absolute 
     text-md
-    font-lexend
+    font-work
     font-semibold
   text-zinc-400
     duration-150 
@@ -105,7 +113,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
     w-[350px]
     md:w-[500px]
     text-md
-    font-lexend
+    font-work
     font-semibold
     text-black
   bg-[#d1dbde]
@@ -124,7 +132,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
             className="
     absolute 
     text-md
-    font-lexend
+    font-work
     font-semibold
   text-zinc-400
     duration-150 
@@ -173,7 +181,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
             className="
     absolute 
     text-md
-    font-lexend
+    font-work
     font-semibold
   text-zinc-400
     duration-150 
@@ -205,7 +213,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
       w-[350px]
       md:w-[500px]
       text-sm
-      font-lexend
+      font-work
       text-black
       bg-[#d1dbde]
       appearance-none
@@ -244,7 +252,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
             className="
       absolute 
       text-md
-      font-lexend
+      font-work
       font-semibold
       text-zinc-400
       duration-150 
@@ -269,7 +277,7 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
           <MarkdownSupport />
           <label
             htmlFor="essay"
-            className="absolute text-md font-lexend font-semibold text-zinc-400 duration-150 transform -translate-y-3 
+            className="absolute text-md font-work font-semibold text-zinc-400 duration-150 transform -translate-y-3 
             scale-75 top-4 z-10 origin-[0] left-6 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3"
           >
             Write your Essay Here
@@ -279,13 +287,13 @@ const Form = ({ updateName, updateEmail, updatePhone }) => {
           <img src={tag} alt="" height="100px" width="100px" className="" />
           <button
             type="submit"
-            className="text-[16px] hover:bg-[#167396] font-lexend font-semibold text-[#1f1e20] rounded-[25px] min-w-[170px] p-3 bg-[#d1dbde]"
+            className="text-[16px] hover:bg-[#167396] font-work font-semibold text-[#1f1e20] rounded-[25px] min-w-[170px] p-3 bg-[#d1dbde]"
           >
             Submit
           </button>
         </div>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

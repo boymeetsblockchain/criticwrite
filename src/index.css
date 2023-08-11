@@ -67,6 +67,7 @@
 
 .markdown > * {
   all: revert;
+  white-space: pre-wrap;
 }
 
 body {
